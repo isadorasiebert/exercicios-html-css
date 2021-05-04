@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+        }
+        
+        th,
+        td {
+            padding: 7px;
+        }
+        
+        .nome {
+            background-color: cornflowerblue;
+        }
+        
+        .email {
+            background-color: rgb(202, 148, 238);
+        }
+        
+        .telefone {
+            background-color: aquamarine;
+        }
+        
+        .cargo {
+            background-color: rgb(86, 205, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption>Cadastro de Clientes</caption>
+        <colgroup>
+            <col class="nome">
+            <col class="email">
+            <col class="telefone">
+            <col class="cargo">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Email:</th>
+                <th>Telefone:</th>
+                <th>Cargo:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Isadora</td>]
+                <td>isadora@isadora.com</td>
+                <td>1234-5678</td>
+                <td rowspan="2">Desenvolvedora Web</td>
+            </tr>
+
+            <tr>
+                <td>Renan</td>
+                <td>renan@renan.com</td>
+                <td>8765-4321</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total: 2</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
