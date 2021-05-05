@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET">
+        <fieldset>
+            <legend>Infos Pessoais</legend>
+        Nome: <input type="text" name="Nome" required autofocus maxlength="5"><br>
+        Senha:
+        <input type="password" name="Senha"><br>
+        Email: <input type="email" name="Email" autocomplete="on" placeholder="seuemail@email.com" required><br>
+        
+        Imagem:<br><br>
+        <input type="file" name="imagem"><br><br>
+        <input type="hidden" name="id"><br><br>
+
+        URL<br>
+        <input type="url" name="site"><br><br>
+
+        Search:<br>
+        <input type="search" name="pesquisa"><br><br>
+
+        Telefone:<br>
+        <input type="telefone"><br><br>
+
+
+        Animal Favorito:<br>
+        <input type="radio" name="animal_favorito" value="cachorro" checked>Cachorro<br>
+        <input type="radio" name="animal_favorito" value="coelho">Coelho<br>
+        <input type="radio" name="animal_favorito" value="gato">Gato<br>
+        <input type="radio" name="animal_favorito" value="hamster">Hamster<br>
+        <br>
+        Cores Favoritas:<br>
+        <input type="checkbox" name="cor_favorita" value="rosa" checked>Rosa<br>
+        <input type="checkbox" name="cor_favorita" value="azul">Azul<br>
+        <input type="checkbox" name="cor_favorita" value="roxo">Roxo<br>
+        <br>
+        Quantidade: <br>
+        <input type="number" name="quantidade" min="0" max="500" step="10"><br><br>
+        <input type="range" name="quantidade"><br><br>
+
+        Cor:<br>
+        <input type="color" name="cor"><br>
+        <br>
+        <input type="submit" name="btn-enviar" value="Enviar"><br>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
