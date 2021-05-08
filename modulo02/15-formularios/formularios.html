@@ -15,7 +15,47 @@
         
         Imagem:<br><br>
         <input type="file" name="imagem"><br><br>
-        <input type="hidden" name="id"><br><br>
+        <input type="hidden" name="id"><br>
+        
+        Data: <br>
+            <input type="date" name="data" min="2000-12-31" max="2020-12-31"><br><br>
+        
+        Hora:<br><br>
+            <input type="time" name="hora"><br><br>
+
+        Mês e ano:<br>
+            <input type="month" name="mes-ano"><br><br>
+
+        Semana:<br>
+            <input type="week" name="semana"><br><br>
+
+        Data e hora:<br>
+            <input type="datetime-local" name="data-hora"><br><br>
+
+        Mensagem:<br>
+            <textarea name="mensagem" rows="5" cols="30"></textarea><br><br>
+            <button type="button">Clique em mim!</button><br><br>
+        
+        Escolha seu animal:<br><br>
+        <select name="Animail:">
+            <optgroup label="Fofos">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </optgroup>
+            <optgroup label="Super-Fofos">
+                <option value="hamster">Hamster</option>
+                <option value="coelho">Coelho</option>
+            </optgroup>
+        </select><br><br>
+
+        Escolha um Curso:<br>
+        <input name="cursos" list="lista-cursos">
+        <datalist id="lista-cursos">
+            <option value="HTML5">
+            <option value="VUE.JS">
+            <option value="FLUTTER">
+        </datalist>
+        <br><br>
 
         URL<br>
         <input type="url" name="site"><br><br>
@@ -25,7 +65,6 @@
 
         Telefone:<br>
         <input type="telefone"><br><br>
-
 
         Animal Favorito:<br>
         <input type="radio" name="animal_favorito" value="cachorro" checked>Cachorro<br>
